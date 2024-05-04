@@ -25,6 +25,18 @@
             <a-asset-item id="motorbike" src="./assets/motorbike/scene.gltf"></a-asset-item>
             <a-asset-item id="helmet" src="./assets/damagedHelmet/damagedHelmet.gltf"></a-asset-item>
             <a-asset-item id="skull" src="./assets/skull_downloadable/scene.gltf"></a-asset-item>
+
+            <a-asset-item id="porsche1" src="./assets/2013__porsche_917_living_legend_concept/scene.gltf"></a-asset-item>
+            <a-asset-item id="cartoon" src="./assets/cartoon_car/scene.gltf"></a-asset-item>
+            <a-asset-item id="brabus" src="./assets/brabus_g900_rocket_edition/scene.gltf"></a-asset-item>
+            <a-asset-item id="chevrolet" src="./assets/chevrolet_chevelle_ss/scene.gltf"></a-asset-item>
+            <a-asset-item id="gaz" src="./assets/gaz_m1_emka/scene.gltf"></a-asset-item>
+            <a-asset-item id="mclaren" src="./assets/mclaren_ultimate_vision_gt__updated__texture/scene.gltf"></a-asset-item>
+            <a-asset-item id="mercedes1" src="./assets/mercedes-benz_s63_coupe_brabus_800/scene.gltf"></a-asset-item>
+            <a-asset-item id="mercedes2" src="./assets/mercedes_benz_e-class_w211/scene.gltf"></a-asset-item>
+            <a-asset-item id="porsche2" src="./assets/porsche_gt3_rs/scene.gltf"></a-asset-item>
+            <a-asset-item id="datsun" src="./assets/free_1972_datsun_240k_gt/scene.gltf"></a-asset-item>
+
             <img id="bougenville" src="./images/photo/bougenville.jpg">
             <img id="kio" src="./images/photo/kio.jpg">
             <img id="mahasiswa" src="./images/photo/mahasiswa.jpg">
@@ -47,66 +59,88 @@
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="0">
-            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:red;">
-                <a-torus-knot radius="0.26" radius-tubular="0.05"></a-torus-knot>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;">
+                <!-- <a-torus-knot radius="0.26" radius-tubular="0.05"></a-torus-knot> -->
+                <a-gltf-model src="#porsche1" rotation="-90 0 0" position="0 -0.2 0.2" scale="30 30 30"></a-gltf-model>
             </a-box>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="1">
-            <a-entity gltf-model="#roti"></a-entity>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;">
+            <a-gltf-model src="#brabus" rotation="-90 0 0" position="0 0 0.3" scale="0.3 0.3 0.3"></a-gltf-model>
+        </a-box>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="2">
-            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="green">
-                <a-gltf-model src="#motorbike" rotation="90 0 0" position="0 -0.2 0.2" scale="0.5 0.5 0.5"></a-gltf-model>
-            </a-plane>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;">
+            <!-- <a-plane width="1" height="1" color="green"> -->
+                <a-gltf-model src="#chevrolet" rotation="-90 0 0" position="0 0.5 0.1" scale="0.05 0.05 0.05"></a-gltf-model>
+            <!-- </a-plane> -->
+            </a-box>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="3">
             <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="white">
-                <a-gltf-model src="#helmet" rotation="0 0 0" position="0 0 0" scale="0 0 0.5"></a-gltf-model>
+                <a-gltf-model src="#gaz" rotation="0 0 0" position="0 0 1" scale="0.3 0.3 0.3"></a-gltf-model>
             </a-plane>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="4">
             <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="cyan">
-                <a-gltf-model src="#skull" rotation="90 0 0" position="0 -0.2 1" scale="0.5 0.5 0.5"></a-gltf-model>
+                <a-gltf-model src="#mclaren" rotation="0 0 0" position="0 -0.2 0.5" scale="0.2 0.2 0.2"></a-gltf-model>
             </a-plane>
         </a-marker>
 
         <!-- handle matrix marker -->
-        <a-marker type="barcode" value="5">
-            <a-image src="#bougenville" rotation="-90 0 0" width="2" height="1">
-                <a-entity position="0 -2.5 0" text-geometry="value: Perpustakaan Sekolah Alam;  style: italic; size: 0.4; weight: bold; height: 0;" material="shader: flat; color: blue" align="center"></a-entity>
-            </a-image>
+        <a-marker type="barcode" value="5">'
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="lime">
+            <!-- <a-image src="#bougenville" rotation="-90 0 0" width="2" height="1"> -->
+                <a-gltf-model src="#mercedes1" rotation="0 0 0" position="0 0 0.4" scale="0.2 0.2 0.2"></a-gltf-model>
+            <!-- </a-image> -->
+            </a-plane>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="6">
-            <a-image src="#kio" rotation="-90 0 0" width="2" height="1"></a-image>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;">
+            <a-gltf-model src="#mercedes2" rotation="-90 0 0" position="0 -0.1 0" scale="0.2 0.2 0.2"></a-gltf-model>
+            </a-box>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="7">
-            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="white" src="#mahasiswa">
-                <a-text value="Bunga" color="#111" position="0 -0.7 0" align="center"></a-text>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;">
+            <!-- <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="white" src="#porsche2"> -->
+                <a-gltf-model src="#porsche2" rotation="-90 0 0" position="0 -0.1 0" scale="0.3 0.3 0.3"></a-gltf-model>
+                <a-text value="Mobilku" color="#111" position="0 -0.7 0" align="center"></a-text>
                 <a-sphere color="blue" position="-0.7 -0.7 0" radius="0.2"></a-sphere>
                 <a-sphere color="red" position="0.7 -0.7 0" radius="0.2"></a-sphere>
-            </a-plane>
+            <!-- </a-plane> -->
+            </a-box>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="8">
-            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="white" src="#airterjun">
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;">
+                <a-gltf-model src="#datsun" rotation="-90 0 0" position="3 -1.5 -3" scale="0.3 0.3 0.3"></a-gltf-model>
+            <!-- <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="white" src="#airterjun"> -->
                 <a-torus-knot radius="0.06" radius-tubular="0.05" position="0.7 -0.7 0">
                 </a-torus-knot>
                 <a-torus-knot radius="0.06" radius-tubular="0.05" position="-0.7 -0.7 0">
                 </a-torus-knot>
-            </a-plane>
+            <!-- </a-plane> -->
+            </a-box>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="9">
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;">
+                <a-gltf-model src="#cartoon" rotation="-90 0 0" position="0 0 0.5" scale="0.1 0.1 0.1"></a-gltf-model>
+            </a-box>
         </a-marker>
 
         <!-- handle custom marker -->
